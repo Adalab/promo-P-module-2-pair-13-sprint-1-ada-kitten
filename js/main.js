@@ -2,7 +2,12 @@
 
 //Ejercicio 3
 const form = document.querySelector('.js-new-form');
-form.classList.remove('collapsed');
+
+if (form.classList.contains('collapsed')) {
+  form.classList.remove('collapsed');
+} else {
+  form.classList.add('collapsed');
+}
 
 //Ejercicio 4
 

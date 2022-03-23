@@ -2,12 +2,26 @@
 
 //Ejercicio 3
 const form = document.querySelector('.js-new-form');
+// form.classList.remove('collapsed')
 
-if (form.classList.contains('collapsed')) {
-  form.classList.remove('collapsed');
-} else {
-  form.classList.add('collapsed');
-}
+// Eventos
+const button = document.querySelector ('.js-fas')
+button.addEventListener ('click',() => { 
+  if (form.classList.contains('collapsed')) {
+    form.classList.remove('collapsed');
+  } else {
+    form.classList.add('collapsed');
+  }
+} );
+
+
+// Condicionales
+// if (form.classList.contains('collapsed')) {
+//   form.classList.remove('collapsed');
+// } else {
+//   form.classList.add('collapsed');
+// }
+
 
 //Ejercicio 4
 

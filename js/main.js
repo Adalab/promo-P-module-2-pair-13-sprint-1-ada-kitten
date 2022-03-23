@@ -5,8 +5,8 @@ const form = document.querySelector('.js-new-form');
 // form.classList.remove('collapsed')
 
 // Eventos
-const button = document.querySelector ('.js-fas')
-button.addEventListener ('click',() => { 
+const fa = document.querySelector ('.js-fas')
+fa.addEventListener ('click',() => { 
   if (form.classList.contains('collapsed')) {
     form.classList.remove('collapsed');
   } else {

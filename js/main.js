@@ -84,8 +84,8 @@ const kitten_C = `<li class="card">
 //Ejercicio 1
 //
 const input = document.querySelector(".js_in_search_desc");
-input.vale = "cariñoso";
-const inputValue = input.vale;
+input.value = "tranquilo";
+const inputValue = input.value;
 if (kittenDesc_A.includes(inputValue)) {
   list.innerHTML = list.innerHTML + kitten_A;
 }
@@ -93,5 +93,5 @@ if (kittenDesc_C.includes(inputValue)) {
   list.innerHTML = list.innerHTML + kitten_C;
 }
 if (kittenDesc_F.includes(inputValue)) {
-  list.innerHTML = list.innerHTML + kittenDesc_F;
+  list.innerHTML = list.innerHTML + kitten_F;
 }

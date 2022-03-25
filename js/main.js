@@ -4,15 +4,37 @@
 const form = document.querySelector(".js-new-form");
 // form.classList.remove('collapsed')
 
-// Eventos
+// // Eventos
 const fa = document.querySelector(".js-fas");
-fa.addEventListener("click", () => {
-  if (form.classList.contains("collapsed")) {
-    form.classList.remove("collapsed");
+// fa.addEventListener("click", () => {
+//   if (form.classList.contains("collapsed")) {
+//     form.classList.remove("collapsed");
+//   } else {
+//     form.classList.add("collapsed");
+//   }
+// });
+function isFormCollapsed() {
+  const isCollapsed = form.classList.contains("collapsed");
+  return isCollapsed;
+}
+
+function removeCollapsedClass() {
+  form.classList.remove("collapsed");
+}
+
+function addCollapsedClass() {
+  form.classList.add("collapsed");
+}
+//funcion manejadora
+function handleClick() {
+  if (isFormCollapsed()) {
+    removeCollapsedClass();
   } else {
-    form.classList.add("collapsed");
+    addCollapsedClass();
   }
-});
+}
+//evento
+fa.addEventListener("click", handleClick);
 
 // Condicionales
 // if (form.classList.contains('collapsed')) {
